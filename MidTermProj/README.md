@@ -173,6 +173,12 @@ http://127.0.0.1:9696/
 
 ## 4️⃣ Test via JSON API
 
+Run the Flask app:
+
+```bash
+python predict.py
+```
+
 ```bash
 curl -X POST http://127.0.0.1:9696/predict \
      -H "Content-Type: application/json" \
