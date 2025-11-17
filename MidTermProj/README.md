@@ -178,7 +178,7 @@ Run the Flask app:
 ```bash
 python predict.py
 ```
-
+Run in another terminal/command line the following:
 ```bash
 curl -X POST http://127.0.0.1:9696/predict \
      -H "Content-Type: application/json" \
