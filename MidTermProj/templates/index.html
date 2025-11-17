@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tsunami Prediction</title>
+</head>
+<body>
+    <h1>Tsunami Prediction Form</h1>
+    <form action="/predict" method="post">
+        <label>Magnitude: <input type="text" name="magnitude"></label><br>
+        <label>CDI: <input type="text" name="cdi"></label><br>
+        <label>MMI: <input type="text" name="mmi"></label><br>
+        <label>SIG: <input type="text" name="sig"></label><br>
+        <label>NST: <input type="text" name="nst"></label><br>
+        <label>Dmin: <input type="text" name="dmin"></label><br>
+        <label>Gap: <input type="text" name="gap"></label><br>
+        <label>Depth: <input type="text" name="depth"></label><br>
+        <label>Latitude: <input type="text" name="latitude"></label><br>
+        <label>Longitude: <input type="text" name="longitude"></label><br>
+        <label>Year: <input type="text" name="Year"></label><br>
+        <label>Month: <input type="text" name="Month"></label><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <!-- Prediction result (only show when prediction exists) -->
+    {% if prediction %}
+    <div id="prediction-result" style="display:block;">
+        <h2>Prediction Result:</h2>
+        <p>Predicted Tsunami: 
+            {% if prediction.prediction == 1 %}
+                Tsunami
+            {% else %}
+                No Tsunami
+            {% endif %}
+        </p>
+        <p>Probability: {{ prediction.probability }}</p>
+    </div>
+    {% endif %}
+
+</body>
+</html>
