@@ -182,12 +182,15 @@ curl -X POST http://127.0.0.1:9696/predict \
 
 ## 🎞 Demo GIFs
 
-1️⃣ Web Form Submission
+## 1️⃣ Web Form Submission
 ![Form Submission](assets/demo-form.gif)
-2️⃣ Prediction Result
+
+## 2️⃣ Prediction Result
 ![Prediction Result](assets/demo-result.gif)
-3️⃣ Dockerized App Running
+
+## 3️⃣ Dockerized App Running
 ![Docker Running](assets/demo-docker.gif)
+
 
 
 
