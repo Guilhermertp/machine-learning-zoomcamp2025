@@ -187,7 +187,7 @@ curl -X POST http://127.0.0.1:9696/predict \
 ## 📜 License
 
 MIT License
-Author: **Your Name**
+Author: **Guilherme Pereira**
 Project: **Tsunami Prediction API**
 
 ---
