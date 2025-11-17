@@ -24,7 +24,7 @@ The model is trained using machine learning algorithms (Logistic Regression, Ran
 ---
 
 **Project Structure**
-
+notebook.ipynb (DOWNLOAD the file, due to his size it doesn't load on github to have a preview)
 
 **How to run the project**
 1) To deploy the model, in the command line, go to the environment where is the file predict.py and run the following:
