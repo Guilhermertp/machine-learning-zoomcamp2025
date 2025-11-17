@@ -146,15 +146,16 @@ Sample input:
 </html>
 ```
 
----
-
 ## 2️⃣ Docker Build
+
+> **⚠️ Make sure Docker Desktop is running** on your machine before running the build command. The Docker daemon must be active, or the build will fail.
 
 ```bash
 docker build -t lightgbm-api .
 ```
 
 ---
+
 
 ## 3️⃣ Docker Run
 
