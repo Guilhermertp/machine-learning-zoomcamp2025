@@ -12,7 +12,7 @@ Supports both a **web form UI** and a **JSON API**. Docker setup included for ea
 ## 📚 Table of Contents
 
 * [Features](#-features)
-* [Prerequisites](#p-rerequisites)
+* [Prerequisites](#-prerequisites)
 * [Project Structure](#-project-structure)
 * [Quick Start](#-quick-start)
 
@@ -20,8 +20,8 @@ Supports both a **web form UI** and a **JSON API**. Docker setup included for ea
   * [2️⃣ Docker Build](#2️⃣-docker-build)
   * [3️⃣ Docker Run](#3️⃣-docker-run)
   * [4️⃣ Test via JSON API](#4️⃣-test-via-json-api)
-* [Demo GIFs](#demo-gifs)
-* [License](#license)
+* [Demo GIFs](#-demo-gifs)
+* [License](#-license)
 
 ---
 
@@ -58,10 +58,16 @@ pip install \
 ```
 project_folder/
 │
-├─ predict.py            # Flask application
-├─ lgbm_model.pkl        # Trained LightGBM model
+├─ predict.py              # Flask application
+├─ lgbm_model.pkl          # Trained LightGBM model
+│
+├─ assets/                 # Demo GIFs
+│  ├─ demo-form.gif
+│  ├─ demo-result.gif
+│  └─ demo-docker.gif
+│
 └─ templates/
-   └─ index.html         # HTML form
+   └─ index.html           # HTML form
 ```
 
 ---
