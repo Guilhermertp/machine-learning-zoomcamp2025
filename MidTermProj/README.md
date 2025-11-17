@@ -11,10 +11,10 @@ Supports both a **web form UI** and a **JSON API**. Docker setup included for ea
 
 ## 📚 Table of Contents
 
-* [Features](#features)
-* [Prerequisites](#prerequisites)
-* [Project Structure](#project-structure)
-* [Quick Start](#quick-start)
+* [Features](#-features)
+* [Prerequisites](#p-rerequisites)
+* [Project Structure](#-project-structure)
+* [Quick Start](#-quick-start)
 
   * [1️⃣ Test via Browser](#1️⃣-test-via-browser)
   * [2️⃣ Docker Build](#2️⃣-docker-build)
@@ -184,7 +184,7 @@ curl -X POST http://127.0.0.1:9696/predict \
 ![Docker Running](assets/demo-docker.gif)
 
 
-(Replace with your GIFs inside `assets/`)
+
 
 ---
 
