@@ -63,8 +63,8 @@ project_folder/
 │
 ├─ assets/                 # Demo GIFs
 │  ├─ demo-form.gif
-│  ├─ demo-result.gif
-│  └─ demo-docker.gif
+│  ├─ demo-docker.gif
+│  └─ demo-result.gif
 │
 └─ templates/
    └─ index.html           # HTML form
