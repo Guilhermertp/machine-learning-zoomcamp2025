@@ -146,15 +146,16 @@ Sample input:
 </html>
 ```
 
----
-
 ## 2️⃣ Docker Build
+
+> **⚠️ Make sure Docker Desktop is running** on your machine before running the build command. The Docker daemon must be active, or the build will fail.
 
 ```bash
 docker build -t lightgbm-api .
 ```
 
 ---
+
 
 ## 3️⃣ Docker Run
 
@@ -172,22 +173,32 @@ http://127.0.0.1:9696/
 
 ## 4️⃣ Test via JSON API
 
+Run the Flask app:
+
 ```bash
-curl -X POST http://127.0.0.1:9696/predict \
-     -H "Content-Type: application/json" \
-     -d '{"magnitude":7.0,"cdi":8,"mmi":7,"sig":768,"nst":117,"dmin":0.509,"gap":17.0,"depth":14.0,"latitude":-9.7963,"longitude":159.596,"Year":2022,"Month":11}'
+python predict.py
+```
+Run in another terminal/command line the following:
+```bash
+curl -X POST http://localhost:9696/predict ^
+     -H "Content-Type: application/json" ^
+     -d "{\"magnitude\":7.0,\"cdi\":8,\"mmi\":7,\"sig\":768,\"nst\":117,\"dmin\":0.509,\"gap\":17.0,\"depth\":14.0,\"latitude\":-9.7963,\"longitude\":159.596,\"Year\":2022,\"Month\":11}"
+
 ```
 
 ---
 
 ## 🎞 Demo GIFs
 
-1️⃣ Web Form Submission
+## 1️⃣ Web Form Submission
 ![Form Submission](assets/demo-form.gif)
-2️⃣ Prediction Result
+
+## 2️⃣ Prediction Result
 ![Prediction Result](assets/demo-result.gif)
-3️⃣ Dockerized App Running
+
+## 3️⃣ Dockerized App Running
 ![Docker Running](assets/demo-docker.gif)
+
 
 
 
