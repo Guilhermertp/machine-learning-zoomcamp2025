@@ -15,7 +15,7 @@
 ---
 
 ## 📚 Table of Contents
-* [Features](#-features)
+* [Features](#features)
 * [Project Overview](#-project-overview)
 
   * [Objective](#-objective)
