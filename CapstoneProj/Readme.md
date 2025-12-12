@@ -262,6 +262,8 @@ curl -X POST http://localhost:9696/predict \
 ### 1 Web Form Submission
 
 ![Form Submission](assets/demo-form.gif)
+![App Interface](assets/app.png)
+
 
 ### 2 Prediction Result
 
@@ -323,11 +325,3 @@ Author: **Guilherme Pereira**
 Project: **Traffic Volume Prediction App**
 
 ---
-
-If you want, I can **also add a “Python dependencies version matrix” badge table** in the README to make it fully professional and show exactly which library versions are required.
-
----
-
-I can do that next and include **all badges in a clean table** if you want.
-
-Do you want me to add the Python dependencies matrix too?
