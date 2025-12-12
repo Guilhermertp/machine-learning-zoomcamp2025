@@ -89,7 +89,7 @@ This project uses **machine learning** to predict future traffic volume based on
 3. **Model Prediction** (Regression model of your choice)
 4. **API or Web UI Output**
 
-![Project Architecture](assets/architecture.png)
+![Project Architecture](asset/architecture.png)
 
 ---
 
@@ -261,13 +261,13 @@ curl -X POST http://localhost:9696/predict \
 
 ### 1 Web Form Submission
 
-![Form Submission](assets/demo-form.gif)
-![App Interface](assets/app.png)
+![Form Submission](asset/demo-form.gif)
+![App Interface](asset/app.png)
 
 
 ### 2 Prediction Result
 
-![Prediction Result](assets/demo-result.gif)
+![Prediction Result](asset/demo-result.gif)
 
 ---
 
