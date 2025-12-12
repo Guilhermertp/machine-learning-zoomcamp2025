@@ -16,7 +16,7 @@
 
 ## 📚 Table of Contents
 * [Features](#features)
-* [Project Overview](#-project-overview)
+* [Project Overview](#project-overview)
 
   * [Objective](#-objective)
   * [Problem Statement](#-problem-statement)
