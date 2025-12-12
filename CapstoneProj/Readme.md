@@ -15,7 +15,7 @@
 ---
 
 ## 📚 Table of Contents
-* [Features](#features)
+
 * [Project Overview](#project-overview)
 
   * [Objective](#objective)
@@ -81,7 +81,7 @@ This project uses **machine learning** to predict future traffic volume based on
 * Holiday indicators
 
 ---
-##  Features
+
 ## Project Architectural Diagram
 
 1. **Data Input** (User provides weather & time-based features)
