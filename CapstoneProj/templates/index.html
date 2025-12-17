@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Volume Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1e3a8a;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="number"], input[type="range"] {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    .checkbox-group, .weekday-group {
+      margin-top: 10px;
+    }
+    .weekday-group label {
+      margin-right: 10px;
+      font-weight: normal;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #3749b0;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      background: #fde2e2;
+      border: 1px solid #f5c2c7;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #b91c1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Traffic Volume Predictor</h1>
+    <p>Predict hourly traffic volume based on weather, time, and day.</p>
+
+    <form id="predictForm">
+      <!-- Hour -->
+      <label for="hour">Hour of Day (0-23)</label>
+      <input type="range" id="hour" name="hour" min="0" max="23" value="12">
+      <span id="hourVal">12</span>
+
+      <!-- Temperature -->
+      <label for="temp">Temperature (°F)</label>
+      <input type="range" id="temp" name="temp" min="-20" max="120" value="60">
+      <span id="tempVal">60</span>
+
+      <!-- Rain -->
+      <label for="rain_1h">Rain (mm)</label>
+      <input type="number" id="rain_1h" name="rain_1h" min="0" max="50" value="0">
+
+      <!-- Snow -->
+      <label for="snow_1h">Snow (mm)</label>
+      <input type="number" id="snow_1h" name="snow_1h" min="0" max="10" value="0">
+
+      <!-- Clouds -->
+      <label for="clouds_all">Cloudiness (%)</label>
+      <input type="range" id="clouds_all" name="clouds_all" min="0" max="100" value="20">
+      <span id="cloudsVal">20</span>
+
+      <!-- Holiday -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="is_holiday" name="is_holiday">
+        <label for="is_holiday">Holiday</label>
+      </div>
+
+      <!-- Weekdays -->
+      <div class="weekday-group">
+        <label>Weekday</label>
+        <input type="radio" id="Monday" name="weekday" value="Monday">
+        <label for="Monday">Monday</label>
+
+        <input type="radio" id="Tuesday" name="weekday" value="Tuesday">
+        <label for="Tuesday">Tuesday</label>
+
+        <input type="radio" id="Wednesday" name="weekday" value="Wednesday">
+        <label for="Wednesday">Wednesday</label>
+
+        <input type="radio" id="Thursday" name="weekday" value="Thursday">
+        <label for="Thursday">Thursday</label>
+
+        <input type="radio" id="Saturday" name="weekday" value="Saturday">
+        <label for="Saturday">Saturday</label>
+
+        <input type="radio" id="Sunday" name="weekday" value="Sunday">
+        <label for="Sunday">Sunday</label>
+      </div>
+
+      <button type="submit">Predict Traffic</button>
+    </form>
+
+    <div id="result" class="result" style="display:none;"></div>
+  </div>
+
+  <script>
+    // Update slider display
+    const hourSlider = document.getElementById('hour');
+    const hourVal = document.getElementById('hourVal');
+    hourSlider.addEventListener('input', () => { hourVal.textContent = hourSlider.value; });
+
+    const tempSlider = document.getElementById('temp');
+    const tempVal = document.getElementById('tempVal');
+    tempSlider.addEventListener('input', () => { tempVal.textContent = tempSlider.value; });
+
+    const cloudsSlider = document.getElementById('clouds_all');
+    const cloudsVal = document.getElementById('cloudsVal');
+    cloudsSlider.addEventListener('input', () => { cloudsVal.textContent = cloudsSlider.value; });
+
+    // Handle form submission
+    document.getElementById('predictForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Build input data
+      const inputs = {
+        temp: parseFloat(document.getElementById('temp').value),
+        rain_1h: parseFloat(document.getElementById('rain_1h').value),
+        snow_1h: parseFloat(document.getElementById('snow_1h').value),
+        clouds_all: parseFloat(document.getElementById('clouds_all').value),
+        hour: parseInt(document.getElementById('hour').value),
+        is_holiday: document.getElementById('is_holiday').checked ? 1 : 0,
+        weekday_Monday: 0,
+        weekday_Tuesday: 0,
+        weekday_Wednesday: 0,
+        weekday_Thursday: 0,
+        weekday_Saturday: 0,
+        weekday_Sunday: 0
+      };
+
+      const weekday = document.querySelector('input[name="weekday"]:checked');
+      if (weekday) {
+        inputs[`weekday_${weekday.value}`] = 1;
+      }
+
+      try {
+        const response = await fetch('/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(inputs)
+        });
+
+        const data = await response.json();
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.textContent = `Predicted Traffic Volume: ${Math.round(data.prediction)} vehicles/hour`;
+      } catch (err) {
+        console.error(err);
+        alert('Error predicting traffic volume.');
+      }
+    });
+  </script>
+</body>
+</html>
