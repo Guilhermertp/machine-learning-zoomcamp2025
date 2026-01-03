@@ -82,7 +82,7 @@ This project uses **machine learning** to predict future traffic volume based on
 
 This setup runs the entire application (web server and ML model) on your local machine. It is typically used for development, testing, or personal use.
 
-![Project Architecture](asset/architecture.png)
+![Project Architecture](assets/architecture.png)
 
 **Step-by-step flow:**
 
@@ -146,7 +146,7 @@ The dataset contains **hourly traffic volume** recorded by MnDOT from **2012–2
 
 ### 📊 Average Traffic Volume by Weekday
 
-![Average Traffic Volume by Weekday](asset/barchart.png)
+![Average Traffic Volume by Weekday](assets/barchart.png)
 
 The **bar chart** highlights clear differences in traffic intensity across the week:
 
@@ -159,7 +159,7 @@ The **bar chart** highlights clear differences in traffic intensity across the w
 
 ### 🌡️ Traffic Volume Heatmap: Hour vs Weekday
 
-![Traffic Volume Heatmap](asset/heatmap.png)
+![Traffic Volume Heatmap](assets/heatmap.png)
 
 The **heatmap** provides a detailed, granular view of the peak traffic hours and patterns across the days of the week. The darker blue/purple colors represent the highest traffic volumes, while the pale yellow represents the lowest. 
 
@@ -346,7 +346,7 @@ curl -X POST http://localhost:9696/predict \
 
 ### Web Form Submission and prediction
 
-![App Interface](asset/app.png)
+![App Interface](assets/app.png)
 ---
 ## Conclusion
 
