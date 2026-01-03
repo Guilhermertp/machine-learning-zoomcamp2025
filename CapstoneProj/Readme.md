@@ -290,55 +290,95 @@ project_folder/
 └─ templates/
    └─ index.html
 ```
+---
+
+## Getting Started
+
+To reproduce or test this project, follow these steps:
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/Guilhermertp/machine-learning-zoomcamp2025.git
+```
+
+### 2. Navigate to the Project Folder
+
+You only need the **CapstoneProj** folder to run this app. Move into the folder:
+
+```bash
+cd machine-learning-zoomcamp2025/CapstoneProj
+```
+
+All necessary files, including the dataset, are included in this folder.
 
 ---
 
-## Getting the Dataset
+## Dependencies / Installation
 
-### Option 1 Direct Download
-
-```bash
-wget https://raw.githubusercontent.com/Guilhermertp/machine-learning-zoomcamp2025/refs/heads/main/CapstoneProj/Metro_Interstate_Traffic_Volume.csv -O Metro_Interstate_Traffic_Volume.csv
-```
-
-### Option 2 Kaggle API
+It’s recommended to use a virtual environment. Install the required Python packages with the specified versions:
 
 ```bash
-pip install kaggle
-kaggle datasets download -d anshtanwar/metro-interstate-traffic-volume -p ./data --unzip
+pip install Flask==3.1.2 scikit-learn==1.7.2 joblib==1.5.2 lightgbm==4.6.0 pandas==2.3.3 numpy==2.3.3
 ```
 
 ---
 
 ## Quick Start
 
-### 1 Test via Browser
+You can test the app in multiple ways:
+
+### 1. Test via Browser
+
+Run the app locally with Python:
 
 ```bash
 python predict.py
 ```
 
-Visit: [http://127.0.0.1:9696/](http://127.0.0.1:9696/)
+Then open your browser and visit: [http://127.0.0.1:9696/](http://127.0.0.1:9696/)
 
-### 2 Docker Build
+---
+
+### 2. Docker Build
+
+Build the Docker image:
 
 ```bash
 docker build -t traffic-volume-api .
 ```
 
-### 3 Docker Run
+---
+
+### 3. Docker Run
+
+Run the Docker container:
 
 ```bash
 docker run -p 9696:9696 traffic-volume-api
 ```
 
-### 4 Test via JSON API
+---
+
+### 4. Test via JSON API
+
+You can send a JSON request directly to the API:
 
 ```bash
 curl -X POST http://localhost:9696/predict \
 -H "Content-Type: application/json" \
 -d "{\"temp\":298.15,\"rain_1h\":0,\"snow_1h\":0,\"clouds_all\":75,\"holiday\":0,\"year\":2018,\"month\":6,\"hour\":14}"
 ```
+
+---
+
+## Notes
+
+* Make sure you are in the **CapstoneProj** folder before running any commands.
+* The dataset is already included, so no separate download is required.
+* Python 3.9+ is recommended.
 
 ---
 
