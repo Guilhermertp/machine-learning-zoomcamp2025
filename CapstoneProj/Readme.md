@@ -32,7 +32,6 @@
   * [Why These Evaluation Metrics](#why-these-evaluation-metrics)
   * [Model Performance Comparison](#model-performance-comparison)
 * [App Features](#app-features)
-* [Prerequisites](#prerequisites)
 * [Project Structure](#project-structure)
 * [Getting the Dataset](#getting-the-dataset)
 
@@ -258,8 +257,6 @@ Traffic volume is a **regression task**, and these metrics:
 * Fully Dockerized
 
 ---
----
-
 ## Project Structure
 
 ```
