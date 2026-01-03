@@ -78,10 +78,39 @@ This project uses **machine learning** to predict future traffic volume based on
 
 ## Project Architectural Diagram
 
-1. **Data Input** (User provides weather & time-based features)
-2. **Preprocessing** (Encoding, scaling, cleaning)
-3. **Model Prediction** (Regression model of your choice)
-4. **API or Web UI Output**
+### Local Deployment Architecture
+
+This setup runs the entire application (web server and ML model) on your local machine. It is typically used for development, testing, or personal use.
+
+**Step-by-step flow:**
+
+1. **User opens a web browser** (e.g., Chrome or Firefox) and navigates to `http://localhost:9696/` (a local address on the user's machine).
+
+2. **Browser sends an HTTP GET request** to the Flask app running locally to load the main page (`index.html`).  
+   - The Flask app serves the `index.html` file from its templates folder.
+
+3. **User interacts with the web page** (e.g., fills in a form with input features) and submits it.
+
+4. **Browser sends an HTTP POST request** to the `/predict` endpoint of the Flask app, including the input data (usually in JSON or form format).
+
+5. **Flask app receives the POST request** at the `/predict` route.
+
+6. **Flask app loads the trained machine learning model** from the file `model_xgb.pkl` (an XGBoost model saved using pickle or joblib).
+
+7. **Flask app uses the loaded model** to make a prediction based on the input data received from the browser.
+
+8. **Flask app creates a JSON response** containing the prediction (e.g., `{"prediction": value}`).
+
+9. **Flask app sends the JSON response back** to the browser.
+
+10. **Browser receives the JSON** and updates the webpage (using JavaScript) to display the prediction result to the user.
+
+**Key characteristics:**  
+- Everything runs on the local machine.  
+- No internet required after initial setup.  
+- Fast response times (no network latency).  
+- Not accessible to others unless the machine is exposed to the network.
+
 
 ![Project Architecture](asset/architecture.png)
 
