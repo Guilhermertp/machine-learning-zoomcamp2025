@@ -144,11 +144,74 @@ The dataset contains **hourly traffic volume** recorded by MnDOT from **2012–2
 
 ## Exploratory Data Analysis
 
-Key observations:
+### 📊 Average Traffic Volume by Weekday
 
-* **Rush hours:** Traffic peaks at 7–9 AM and 4–6 PM
-* **Weather:** Snow and heavy rain reduce traffic
-* **Holidays:** Lower traffic compared to workdays
+![Average Traffic Volume by Weekday](asset/Barchart.png)
+
+The **bar chart** highlights clear differences in traffic intensity across the week:
+
+* **Peak Days:** **Thursday** and **Friday** record the highest average traffic volumes, slightly exceeding **3,600**, making them the busiest days overall.
+* **Consistently Busy Weekdays:** **Monday**, **Tuesday**, and **Wednesday** also maintain high traffic levels, clustered closely between **3,300 and 3,600**, indicating steady commuter-driven demand throughout the workweek.
+* **Weekend Decline:** **Saturday** shows a noticeable drop in traffic (around **2,800**), while **Sunday** experiences the lowest volume of the entire week (near **2,400**).
+* **Sharp Transition:** The decline from **Friday to Saturday** is substantial, confirming a strong distinction between weekday commuting traffic and weekend travel behavior.
+
+---
+
+### 🌡️ Traffic Volume Heatmap: Hour vs Weekday
+
+![Traffic Volume Heatmap](asset/heatmap.png)
+
+The **heatmap** provides a detailed, granular view of the peak traffic hours and patterns across the days of the week. The darker blue/purple colors represent the highest traffic volumes, while the pale yellow represents the lowest. 
+
+---
+
+#### 1. Weekday (Monday – Friday) Patterns
+
+Weekdays exhibit a **classic commuter traffic profile** with two pronounced peaks:
+
+* **Morning Peak (AM Rush Hour):**
+
+  * Occurs between **7:00 and 9:00**.
+  * **8:00** stands out as the busiest morning hour across all weekdays, with volumes exceeding **5,700** and climbing above **6,000** midweek.
+* **Evening Peak (PM Rush Hour):**
+
+  * Strongest between **16:00 and 18:00**.
+  * **17:00** is the **single busiest hour of the entire week**, reaching the darkest intensities on Wednesday, Thursday, and Friday (above **6,300**).
+* **Midday Plateau:** Between **10:00 and 15:00**, traffic dips slightly but remains consistently high (roughly **4,500–5,200**), indicating sustained daytime activity.
+* **Overnight Low:** The lowest volumes occur between **0:00 and 5:00**, when traffic is minimal across all weekdays.
+
+---
+
+#### 2. Weekend (Saturday – Sunday) Patterns
+
+Weekend traffic follows a very different rhythm:
+
+* **Saturday:**
+
+  * Traffic increases later in the morning (around **8:00–9:00**).
+  * Volumes remain elevated from **10:00 through early evening**, forming a broad, sustained peak rather than sharp rush hours.
+  * Peak levels are noticeably lower than weekday PM peaks, reflecting leisure and errand-based travel.
+* **Sunday:**
+
+  * Overall traffic is the lightest of the week.
+  * Volumes gradually rise late morning and peak between **12:00 and 17:00**, then decline steadily into the evening.
+  * Even at its peak, Sunday traffic resembles weekday midday levels rather than rush-hour intensity.
+
+---
+
+#### 3. Key Peak Traffic Hours Summary
+
+| Period      | Day(s)                 | Typical Peak Hours        | Highest Volume Hour |
+| ----------- | ---------------------- | ------------------------- | ------------------- |
+| **Overall** | **Weekdays (Thu–Fri)** | 16:00 – 18:00             | **17:00 (Evening Rush Hour)**           |
+| **AM Peak** | Weekdays               | 7:00 – 9:00               | 8:00                |
+| **PM Peak** | Weekdays               | 16:00 – 18:00             | 17:00               |
+| **Weekend** | Saturday               | 10:00 – 18:00 (Sustained) | 15:00 – 17:00       |
+
+---
+
+**Overall Insight:**
+The combined charts clearly show that traffic demand is **strongly driven by weekday commuting**, with pronounced rush-hour peaks, while weekends feature **lower, more evenly distributed traffic**, dominated by discretionary travel rather than work-related movement.
 
 ---
 
