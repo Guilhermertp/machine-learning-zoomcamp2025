@@ -40,21 +40,21 @@
 
 9. [Getting Started](#9-getting-started)
     9.1 [Clone the Repository](#91-clone-the-repository)
-    9.2 [Navigate to the Project Folder](navigate-to-the-project-folder)
+    9.2 [Navigate to the Project Folder](92-navigate-to-the-project-folder)
 
-10.  [Dependencies / Installation](dependencies-/-installation)   
+10.  [Dependencies / Installation](10-dependencies-/-installation)   
 
-11. [Quick Start](#quick-start)
-    11.1 [Test via Browser](#1-test-via-browser)
-    11.2 [Docker Build](#2-docker-build)
-    11.3 [Docker Run](#3-docker-run)
-    11.4 [Test via JSON API](#4-test-via-json-api)
+11. [Quick Start](#11-quick-start)
+    11.1 [Test via Browser](#111-test-via-browser)
+    11.2 [Docker Build](#112-docker-build)
+    11.3 [Docker Run](#113-docker-run)
+    11.4 [Test via JSON API](#114-test-via-json-api)
 
-12. [App Preview](#app-preview)
+12. [App Preview](#12-app-preview)
 
-13. [Conclusion](#conclusion)
+13. [Conclusion](#13-conclusion)
 
-14. [License](#license)
+14. [License](#14-license)
 
 ---
 
@@ -285,7 +285,7 @@ project_folder/
 
 To reproduce or test this project, follow these steps:
 
-### 9.1. Clone the Repository
+### 9.1 Clone the Repository
 
 Clone the repository to your local machine:
 
@@ -293,7 +293,7 @@ Clone the repository to your local machine:
 git clone https://github.com/Guilhermertp/machine-learning-zoomcamp2025.git
 ```
 
-### 9.2. Navigate to the Project Folder
+### 9.2 Navigate to the Project Folder
 
 You only need the **CapstoneProj** folder to run this app. Move into the folder:
 
@@ -321,7 +321,7 @@ pip install Flask==3.1.2 scikit-learn==1.7.2 joblib==1.5.2 lightgbm==4.6.0 panda
 
 You can test the app in multiple ways:
 
-### 11.1. Test via Browser
+### 11.1 Test via Browser
 
 Run the app locally with Python:
 
@@ -335,7 +335,7 @@ Then open your browser and visit: [http://127.0.0.1:9696/](http://127.0.0.1:9696
 
 
 
-### 11.2. Docker Build
+### 11.2 Docker Build
 
 > **⚠️ Make sure Docker Desktop is running** on your machine before running the build command. The Docker daemon must be active, or the build will fail.
 
@@ -348,7 +348,7 @@ docker build -t traffic-volume-api .
 
 ---
 
-### 11.3. Docker Run
+### 11.3 Docker Run
 
 Run the Docker container:
 
@@ -367,7 +367,7 @@ http://127.0.0.1:9696/
 
 ---
 
-### 11.4. Test via JSON API
+### 11.4 Test via JSON API
 
 You can send a JSON request directly to the API:
 
