@@ -258,19 +258,6 @@ Traffic volume is a **regression task**, and these metrics:
 * Fully Dockerized
 
 ---
-
-## Prerequisites
-
-```bash
-pip install Flask==3.1.2 pandas==2.3.1 numpy==2.3.1 scikit-learn==1.7.0 joblib
-```
-
-Optional:
-
-```bash
-pip install lightgbm==4.6.0
-```
-
 ---
 
 ## Project Structure
@@ -378,7 +365,6 @@ curl -X POST http://localhost:9696/predict \
 
 * Make sure you are in the **CapstoneProj** folder before running any commands.
 * The dataset is already included, so no separate download is required.
-* Python 3.9+ is recommended.
 
 ---
 
