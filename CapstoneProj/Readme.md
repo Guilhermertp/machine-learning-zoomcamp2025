@@ -15,38 +15,40 @@
 
 ## 📚 Table of Contents
 
-1. [Project Overview](#project-overview)
-   1.1 [Objective](#objective)
-   1.2 [Problem Statement](#problem-statement)
+1. [Project Overview](#1-project-overview)
+   1.1 [Objective](#11-objective)
+   1.2 [Problem Statement](#12-problem-statement)
 
-2. [Project Architectural Diagram](#project-architectural-diagram)
+2. [Project Architectural Diagram](#2-project-architectural-diagram)
 
-3. [Dataset](#dataset)
-   3.1 [Sources](#sources)
+3. [Dataset](#3-dataset)
+   3.1 [Sources](#31-sources)
 
-4. [Dataset Structure](#dataset-structure)
+4. [Dataset Structure](#4-dataset-structure)
 
-5. [Exploratory Data Analysis](#exploratory-data-analysis)
+5. [Exploratory Data Analysis](#5-exploratory-data-analysis)
 
-6. [Modeling and Evaluation](#modeling-and-evaluation)
-   6.1 [Potential Models](#potential-models)
-   6.2 [Evaluation Metrics](#evaluation-metrics)
-   6.3 [Why These Evaluation Metrics](#why-these-evaluation-metrics)
-   6.4 [Model Performance Comparison](#model-performance-comparison)
+6. [Modeling and Evaluation](#6-modeling-and-evaluation)
+   6.1 [Potential Models](#61-potential-models)
+   6.2 [Evaluation Metrics](#62-evaluation-metrics)
+   6.3 [Why These Evaluation Metrics](#63-why-these-evaluation-metrics)
+   6.4 [Model Performance Comparison](#64-model-performance-comparison)
 
-7. [App Features](#app-features)
+7. [App Features](#7-app-features)
 
-8. [Project Structure](#project-structure)
+8. [Project Structure](#8-project-structure)
 
 9. [Getting Started](#9-getting-started)
     9.1 [Clone the Repository](#91-clone-the-repository)
     9.2 [Navigate to the Project Folder](navigate-to-the-project-folder)
 
+10.  [Dependencies / Installation](dependencies-/-installation)   
+
 11. [Quick Start](#quick-start)
-    10.1 [Test via Browser](#1-test-via-browser)
-    10.2 [Docker Build](#2-docker-build)
-    10.3 [Docker Run](#3-docker-run)
-    10.4 [Test via JSON API](#4-test-via-json-api)
+    11.1 [Test via Browser](#1-test-via-browser)
+    11.2 [Docker Build](#2-docker-build)
+    11.3 [Docker Run](#3-docker-run)
+    11.4 [Test via JSON API](#4-test-via-json-api)
 
 12. [App Preview](#app-preview)
 
@@ -56,9 +58,9 @@
 
 ---
 
-## Project Overview
+## 1. Project Overview
 
-### Objective
+### 1.1 Objective
 
 The goal of this project is to **predict traffic volume** on westbound I-94, a major interstate highway connecting Minneapolis and St. Paul, Minnesota. Accurate traffic forecasting supports:
 
@@ -67,7 +69,7 @@ The goal of this project is to **predict traffic volume** on westbound I-94, a m
 * More efficient infrastructure decisions
 * Enhanced commuter experience
 
-### Problem Statement
+### 1.2 Problem Statement
 
 Urban roads face unpredictable congestion driven by weather, time of day, and special events.
 This project uses **machine learning** to predict future traffic volume based on:
@@ -78,7 +80,7 @@ This project uses **machine learning** to predict future traffic volume based on
 
 ---
 
-## Project Architectural Diagram
+## 2. Project Architectural Diagram
 
 ### Local Deployment Architecture
 
@@ -117,18 +119,18 @@ This setup runs the entire application (web server and ML model) on your local m
 
 ---
 
-## Dataset
+## 3. Dataset
 
 The dataset contains **hourly traffic volume** recorded by MnDOT from **2012–2018** on I-94 between Minneapolis and St. Paul.
 
-### Sources
+### 3.1 Sources
 
 * **Kaggle:** [Metro Interstate Traffic Volume](https://www.kaggle.com/datasets/anshtanwar/metro-interstate-traffic-volume)
 * **Direct CSV:** [Metro_Interstate_Traffic_Volume.csv](https://raw.githubusercontent.com/Guilhermertp/machine-learning-zoomcamp2025/refs/heads/main/CapstoneProj/Metro_Interstate_Traffic_Volume.csv)
 
 ---
 
-## Dataset Structure
+## 4. Dataset Structure
 
 | Feature          | Description                  |
 | ---------------- | ---------------------------- |
@@ -144,7 +146,7 @@ The dataset contains **hourly traffic volume** recorded by MnDOT from **2012–2
 
 ---
 
-## Exploratory Data Analysis
+## 5. Exploratory Data Analysis
 
 ### 📊 Average Traffic Volume by Weekday
 
@@ -217,23 +219,23 @@ The combined charts clearly show that traffic demand is **strongly driven by wee
 
 ---
 
-## Modeling and Evaluation
+## 6. Modeling and Evaluation
 
-### Potential Models
+### 6.1 Potential Models
 
 * Linear Regression
 * Decision Tree Regressor
 * Random Forest Regressor
 * Gradient Boosting (XGBoost / LightGBM)
 
-### Evaluation Metrics
+### 6.2 Evaluation Metrics
 
 * **MAE** – average absolute error
 * **MSE** – penalizes large errors
 * **RMSE** – interpretable version of MSE
 * **R² Score** – how much variance is explained
 
-### Why These Evaluation Metrics
+### 6.3 Why These Evaluation Metrics
 
 Traffic volume is a **regression task**, and these metrics:
 
@@ -241,7 +243,7 @@ Traffic volume is a **regression task**, and these metrics:
 * Penalize big mistakes (MSE/RMSE)
 * Evaluate overall model fit (R²)
 
-### Model Performance Comparison
+### 6.4 Model Performance Comparison
 
 | Model             | MAE | MSE | RMSE | R² Score |
 | ----------------- | --- | --- | ---- | -------- |
@@ -252,7 +254,7 @@ Traffic volume is a **regression task**, and these metrics:
 
 ---
 
-## App Features
+## 7. App Features
 
 * Predict traffic with any regression model
 * Simple Flask web UI
@@ -260,7 +262,7 @@ Traffic volume is a **regression task**, and these metrics:
 * Fully Dockerized
 
 ---
-## Project Structure
+## 8. Project Structure
 
 ```
 project_folder/
@@ -303,7 +305,7 @@ All necessary files, including the dataset, are included in this folder.
 
 ---
 
-## Dependencies / Installation
+## 10. Dependencies / Installation
 
 * **Python 3.13**
 
@@ -315,11 +317,11 @@ pip install Flask==3.1.2 scikit-learn==1.7.2 joblib==1.5.2 lightgbm==4.6.0 panda
 
 ---
 
-## Quick Start
+## 11. Quick Start
 
 You can test the app in multiple ways:
 
-### 1. Test via Browser
+### 11.1. Test via Browser
 
 Run the app locally with Python:
 
@@ -333,7 +335,7 @@ Then open your browser and visit: [http://127.0.0.1:9696/](http://127.0.0.1:9696
 
 
 
-### 2. Docker Build
+### 11.2. Docker Build
 
 > **⚠️ Make sure Docker Desktop is running** on your machine before running the build command. The Docker daemon must be active, or the build will fail.
 
@@ -346,7 +348,7 @@ docker build -t traffic-volume-api .
 
 ---
 
-### 3. Docker Run
+### 11.3. Docker Run
 
 Run the Docker container:
 
@@ -365,7 +367,7 @@ http://127.0.0.1:9696/
 
 ---
 
-### 4. Test via JSON API
+### 11.4. Test via JSON API
 
 You can send a JSON request directly to the API:
 
@@ -384,20 +386,20 @@ curl -X POST http://localhost:9696/predict \
 
 ---
 
-## App Preview
+## 12. App Preview
 
-### Web Form Submission and prediction
+### 12.1 Web Form Submission and prediction
 
 ![App Interface](assets/app.png)
 ---
-## Conclusion
+## 13. Conclusion
 
 This project provides a complete template for predicting hourly traffic volume using machine learning.
 By combining temporal, weather, and holiday features, the model supports smarter traffic forecasting for cities and commuters.
 
 ---
 
-## License
+## 14. License
 
 MIT License
 Author: **Guilherme Pereira**
