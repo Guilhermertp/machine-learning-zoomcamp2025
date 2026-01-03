@@ -38,9 +38,7 @@
 
 8. [Project Structure](#project-structure)
 
-9. [Getting the Dataset](#getting-the-dataset)
-   9.1 [Option 1 Direct Download](#option-1-direct-download)
-   9.2 [Option 2 Kaggle API](#option-2-kaggle-api)
+9. [Getting Started](#getting-started)
 
 10. [Quick Start](#quick-start)
     10.1 [Test via Browser](#1-test-via-browser)
