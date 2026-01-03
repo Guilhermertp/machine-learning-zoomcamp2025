@@ -15,41 +15,46 @@
 
 ## 📚 Table of Contents
 
-* [Project Overview](#project-overview)
+1. [Project Overview](#project-overview)
+   1.1 [Objective](#objective)
+   1.2 [Problem Statement](#problem-statement)
 
-  * [Objective](#objective)
-  * [Problem Statement](#problem-statement)
-* [Project Architectural Diagram](#project-architectural-diagram)
-* [Dataset](#dataset)
+2. [Project Architectural Diagram](#project-architectural-diagram)
 
-  * [Sources](#-sources)
-* [Dataset Structure](#dataset-structure)
-* [Exploratory Data Analysis](#exploratory-data-analysis)
-* [Modeling and Evaluation](#modeling-and-evaluation)
+3. [Dataset](#dataset)
+   3.1 [Sources](#-sources)
 
-  * [Potential Models](#potential-models)
-  * [Evaluation Metrics](#evaluation-metrics)
-  * [Why These Evaluation Metrics](#why-these-evaluation-metrics)
-  * [Model Performance Comparison](#model-performance-comparison)
-* [App Features](#app-features)
-* [Project Structure](#project-structure)
-* [Getting the Dataset](#getting-the-dataset)
+4. [Dataset Structure](#dataset-structure)
 
-  * [Option 1 Direct Download](#option-1-direct-download)
-  * [Option 2 Kaggle API](#option-2-kaggle-api)
-* [Quick Start](#quick-start)
+5. [Exploratory Data Analysis](#exploratory-data-analysis)
 
-  * [1 Test via Browser](#1-test-via-browser)
-  * [2 Docker Build](#2-docker-build)
-  * [3 Docker Run](#3-docker-run)
-  * [4 Test via JSON API](#4-test-via-json-api)
-* [Demo GIFs](#demo-gifs)
+6. [Modeling and Evaluation](#modeling-and-evaluation)
+   6.1 [Potential Models](#potential-models)
+   6.2 [Evaluation Metrics](#evaluation-metrics)
+   6.3 [Why These Evaluation Metrics](#why-these-evaluation-metrics)
+   6.4 [Model Performance Comparison](#model-performance-comparison)
 
-  * [1 Web Form Submission](#1-web-form-submission)
-  * [2 Prediction Result](#2-prediction-result)
+7. [App Features](#app-features)
 
-* [Conclusion](#conclusion)
-* [License](#license)
+8. [Project Structure](#project-structure)
+
+9. [Getting the Dataset](#getting-the-dataset)
+   9.1 [Option 1 Direct Download](#option-1-direct-download)
+   9.2 [Option 2 Kaggle API](#option-2-kaggle-api)
+
+10. [Quick Start](#quick-start)
+    10.1 [Test via Browser](#1-test-via-browser)
+    10.2 [Docker Build](#2-docker-build)
+    10.3 [Docker Run](#3-docker-run)
+    10.4 [Test via JSON API](#4-test-via-json-api)
+
+11. [Demo GIFs](#demo-gifs)
+    11.1 [Web Form Submission](#1-web-form-submission)
+    11.2 [Prediction Result](#2-prediction-result)
+
+12. [Conclusion](#conclusion)
+
+13. [License](#license)
 
 ---
 
