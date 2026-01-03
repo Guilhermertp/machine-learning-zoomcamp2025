@@ -46,9 +46,7 @@
     10.3 [Docker Run](#3-docker-run)
     10.4 [Test via JSON API](#4-test-via-json-api)
 
-11. [Demo GIFs](#demo-gifs)
-    11.1 [Web Form Submission](#1-web-form-submission)
-    11.2 [Prediction Result](#2-prediction-result)
+11. [App Preview](#app-preview)
 
 12. [Conclusion](#conclusion)
 
