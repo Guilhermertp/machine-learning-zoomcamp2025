@@ -22,33 +22,33 @@
 2. [Project Architectural Diagram](#2-project-architectural-diagram)
 
 3. [Dataset](#3-dataset)
-   3.1 [Sources](#31-sources)
+   - 3.1 [Sources](#31-sources)
 
 4. [Dataset Structure](#4-dataset-structure)
 
 5. [Exploratory Data Analysis](#5-exploratory-data-analysis)
 
 6. [Modeling and Evaluation](#6-modeling-and-evaluation)
-   6.1 [Potential Models](#61-potential-models)
-   6.2 [Evaluation Metrics](#62-evaluation-metrics)
-   6.3 [Why These Evaluation Metrics](#63-why-these-evaluation-metrics)
-   6.4 [Model Performance Comparison](#64-model-performance-comparison)
+   - 6.1 [Potential Models](#61-potential-models)
+   - 6.2 [Evaluation Metrics](#62-evaluation-metrics)
+   - 6.3 [Why These Evaluation Metrics](#63-why-these-evaluation-metrics)
+   - 6.4 [Model Performance Comparison](#64-model-performance-comparison)
 
 7. [App Features](#7-app-features)
 
 8. [Project Structure](#8-project-structure)
 
 9. [Getting Started](#9-getting-started)
-    9.1 [Clone the Repository](#91-clone-the-repository)
-    9.2 [Navigate to the Project Folder](#92-navigate-to-the-project-folder)
+    - 9.1 [Clone the Repository](#91-clone-the-repository)
+    - 9.2 [Navigate to the Project Folder](#92-navigate-to-the-project-folder)
 
 10. [Dependencies / Installation](#10-dependencies--installation)   
 
 11. [Quick Start](#11-quick-start)
-    11.1 [Test via Browser](#111-test-via-browser)
-    11.2 [Docker Build](#112-docker-build)
-    11.3 [Docker Run](#113-docker-run)
-    11.4 [Test via JSON API](#114-test-via-json-api)
+    - 11.1 [Test via Browser](#111-test-via-browser)
+    - 11.2 [Docker Build](#112-docker-build)
+    - 11.3 [Docker Run](#113-docker-run)
+    - 11.4 [Test via JSON API](#114-test-via-json-api)
 
 12. [App Preview](#12-app-preview)
 
