@@ -40,7 +40,7 @@
 
 9. [Getting Started](#getting-started)
     9.1 [Clone the Repository](clone-the-repository)
-    9.2 [Clone the Repository](clone-the-repository)
+    9.2 [Navigate to the Project Folder](navigate-to-the-project-folder)
 
 11. [Quick Start](#quick-start)
     10.1 [Test via Browser](#1-test-via-browser)
@@ -279,11 +279,11 @@ project_folder/
 ```
 ---
 
-## Getting Started
+## 9. Getting Started
 
 To reproduce or test this project, follow these steps:
 
-### 1. Clone the Repository
+### 9.1. Clone the Repository
 
 Clone the repository to your local machine:
 
@@ -291,7 +291,7 @@ Clone the repository to your local machine:
 git clone https://github.com/Guilhermertp/machine-learning-zoomcamp2025.git
 ```
 
-### 2. Navigate to the Project Folder
+### 9.2. Navigate to the Project Folder
 
 You only need the **CapstoneProj** folder to run this app. Move into the folder:
 
