@@ -6,10 +6,10 @@
 ![Flask](https://img.shields.io/badge/Flask-3.1.2-green)
 ![Docker](https://img.shields.io/badge/Docker-yes-blue)
 [![Dataset](https://img.shields.io/badge/dataset-Kaggle-orange)](https://www.kaggle.com/datasets/anshtanwar/metro-interstate-traffic-volume)
-![pandas](https://img.shields.io/badge/pandas-2.3.1-blue)
-![numpy](https://img.shields.io/badge/numpy-2.3.1-blue)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7.0-blue)
-![joblib](https://img.shields.io/badge/joblib-1.3.2-blue)
+![pandas](https://img.shields.io/badge/pandas-2.3.3-blue)
+![numpy](https://img.shields.io/badge/numpy-2.3.3-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7.2-blue)
+![joblib](https://img.shields.io/badge/joblib-1.5.2-blue)
 
 ---
 
