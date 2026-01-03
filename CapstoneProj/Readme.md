@@ -49,12 +49,7 @@
 
   * [1 Web Form Submission](#1-web-form-submission)
   * [2 Prediction Result](#2-prediction-result)
-* [Deployment to Cloud](#deployment-to-cloud)
 
-  * [Why Streamlit Cloud](#why-streamlit-cloud)
-  * [How Deployment Works](#how-deployment-works)
-  * [Deploying to Streamlit Cloud](#deploying-to-streamlit-cloud)
-  * [Frontend Optional React UI](#frontend-optional-react-ui)
 * [Conclusion](#conclusion)
 * [License](#license)
 
@@ -270,47 +265,6 @@ curl -X POST http://localhost:9696/predict \
 ![Prediction Result](asset/demo-result.gif)
 
 ---
-
-## Deployment to Cloud
-
-The app can be deployed for free on **Streamlit Cloud**.
-
-### Why Streamlit Cloud
-
-* Free hosting
-* Auto-deployment from GitHub
-* Built for ML apps
-* No server configuration
-
-### How Deployment Works
-
-Your ML model + UI run inside Streamlit.
-React frontend is optional.
-
-### Deploying to Streamlit Cloud
-
-1. Push repo to GitHub
-2. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
-3. Click **Deploy App**
-4. Choose your repo
-5. Set entrypoint: `app.py`
-6. Add dependencies to `requirements.txt`
-
-### Frontend Optional React UI
-
-Your React component (`TrafficPredictor`) can be hosted on:
-
-* **Vercel**
-* **Netlify**
-
-Update backend URL:
-
-```js
-const res = await fetch("https://your-cloud-app-url/predict", {...});
-```
-
----
-
 ## Conclusion
 
 This project provides a complete template for predicting hourly traffic volume using machine learning.
