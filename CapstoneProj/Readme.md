@@ -22,7 +22,7 @@
 2. [Project Architectural Diagram](#project-architectural-diagram)
 
 3. [Dataset](#dataset)
-   3.1 [Sources](#-sources)
+   3.1 [Sources](#sources)
 
 4. [Dataset Structure](#dataset-structure)
 
