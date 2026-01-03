@@ -146,7 +146,7 @@ The dataset contains **hourly traffic volume** recorded by MnDOT from **2012–2
 
 ### 📊 Average Traffic Volume by Weekday
 
-![Average Traffic Volume by Weekday](asset/Barchart.png)
+![Average Traffic Volume by Weekday](asset/barchart.png)
 
 The **bar chart** highlights clear differences in traffic intensity across the week:
 
@@ -282,9 +282,10 @@ project_folder/
 ├─ model.pkl
 │
 ├─ assets/
-│  ├─ EDA.png
 │  ├─ app.png
-│  └─ architecture.png
+│  ├─ architecture.png
+│  ├─ barchart.png
+│  └─ heatmap.png
 │
 └─ templates/
    └─ index.html
