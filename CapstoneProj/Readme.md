@@ -42,7 +42,7 @@
     9.1 [Clone the Repository](#91-clone-the-repository)
     9.2 [Navigate to the Project Folder](92-navigate-to-the-project-folder)
 
-10.  [Dependencies / Installation](10-dependencies-/-installation)   
+10. [Dependencies / Installation](#10-dependencies--installation)   
 
 11. [Quick Start](#11-quick-start)
     11.1 [Test via Browser](#111-test-via-browser)
