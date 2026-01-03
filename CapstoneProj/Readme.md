@@ -16,8 +16,8 @@
 ## 📚 Table of Contents
 
 1. [Project Overview](#1-project-overview)
-   1.1 [Objective](#11-objective)
-   1.2 [Problem Statement](#12-problem-statement)
+   - 1.1 [Objective](#11-objective)
+   - 1.2 [Problem Statement](#12-problem-statement)
 
 2. [Project Architectural Diagram](#2-project-architectural-diagram)
 
