@@ -329,9 +329,11 @@ Then open your browser and visit: [http://127.0.0.1:9696/](http://127.0.0.1:9696
 ---
 
 
-> **⚠️ Make sure Docker Desktop is running** on your machine before running the build command. The Docker daemon must be active, or the build will fail.
 
 ### 2. Docker Build
+
+> **⚠️ Make sure Docker Desktop is running** on your machine before running the build command. The Docker daemon must be active, or the build will fail.
+
 
 Build the Docker image:
 
