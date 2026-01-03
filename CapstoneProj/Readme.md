@@ -82,6 +82,8 @@ This project uses **machine learning** to predict future traffic volume based on
 
 This setup runs the entire application (web server and ML model) on your local machine. It is typically used for development, testing, or personal use.
 
+![Project Architecture](asset/architecture.png)
+
 **Step-by-step flow:**
 
 1. **User opens a web browser** (e.g., Chrome or Firefox) and navigates to `http://localhost:9696/` (a local address on the user's machine).
@@ -110,9 +112,6 @@ This setup runs the entire application (web server and ML model) on your local m
 - No internet required after initial setup.  
 - Fast response times (no network latency).  
 - Not accessible to others unless the machine is exposed to the network.
-
-
-![Project Architecture](asset/architecture.png)
 
 ---
 
