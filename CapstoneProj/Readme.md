@@ -38,7 +38,7 @@
 
 8. [Project Structure](#project-structure)
 
-9. [Getting Started](#getting-started)
+9. [Getting Started](#9-getting-started)
     9.1 [Clone the Repository](clone-the-repository)
     9.2 [Navigate to the Project Folder](navigate-to-the-project-folder)
 
