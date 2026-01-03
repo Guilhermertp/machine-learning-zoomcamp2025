@@ -5,7 +5,6 @@
 ![Python](https://img.shields.io/badge/python-3.13-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.1.2-green)
 ![Docker](https://img.shields.io/badge/Docker-yes-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-ready-orange)
 [![Dataset](https://img.shields.io/badge/dataset-Kaggle-orange)](https://www.kaggle.com/datasets/anshtanwar/metro-interstate-traffic-volume)
 ![pandas](https://img.shields.io/badge/pandas-2.3.1-blue)
 ![numpy](https://img.shields.io/badge/numpy-2.3.1-blue)
