@@ -166,7 +166,6 @@ Traffic volume is a **regression task**, and these metrics:
 * Simple Flask web UI
 * JSON API endpoint
 * Fully Dockerized
-* Optional React frontend
 
 ---
 
