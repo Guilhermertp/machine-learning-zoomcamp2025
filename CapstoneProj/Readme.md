@@ -39,18 +39,20 @@
 8. [Project Structure](#project-structure)
 
 9. [Getting Started](#getting-started)
+    9.1 [Clone the Repository](clone-the-repository)
+    9.2 [Clone the Repository](clone-the-repository)
 
-10. [Quick Start](#quick-start)
+11. [Quick Start](#quick-start)
     10.1 [Test via Browser](#1-test-via-browser)
     10.2 [Docker Build](#2-docker-build)
     10.3 [Docker Run](#3-docker-run)
     10.4 [Test via JSON API](#4-test-via-json-api)
 
-11. [App Preview](#app-preview)
+12. [App Preview](#app-preview)
 
-12. [Conclusion](#conclusion)
+13. [Conclusion](#conclusion)
 
-13. [License](#license)
+14. [License](#license)
 
 ---
 
