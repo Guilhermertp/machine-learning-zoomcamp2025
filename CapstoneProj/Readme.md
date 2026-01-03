@@ -302,6 +302,8 @@ All necessary files, including the dataset, are included in this folder.
 
 ## Dependencies / Installation
 
+* **Python 3.13**
+
 It’s recommended to use a virtual environment. Install the required Python packages with the specified versions:
 
 ```bash
@@ -326,6 +328,9 @@ Then open your browser and visit: [http://127.0.0.1:9696/](http://127.0.0.1:9696
 
 ---
 
+
+> **⚠️ Make sure Docker Desktop is running** on your machine before running the build command. The Docker daemon must be active, or the build will fail.
+
 ### 2. Docker Build
 
 Build the Docker image:
@@ -343,6 +348,15 @@ Run the Docker container:
 ```bash
 docker run -p 9696:9696 traffic-volume-api
 ```
+Access:
+
+```
+http://127.0.0.1:9696/
+```
+
+---
+
+
 
 ---
 
