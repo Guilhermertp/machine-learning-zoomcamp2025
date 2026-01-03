@@ -191,8 +191,8 @@ project_folder/
 ├─ model.pkl
 │
 ├─ assets/
-│  ├─ demo-form.gif
-│  ├─ demo-result.gif
+│  ├─ EDA.png
+│  ├─ app.png
 │  └─ architecture.png
 │
 └─ templates/
@@ -250,18 +250,11 @@ curl -X POST http://localhost:9696/predict \
 
 ---
 
-## Demo GIFs
+## App Preview
 
-### 1 Web Form Submission
+### Web Form Submission and prediction
 
-![Form Submission](asset/demo-form.gif)
 ![App Interface](asset/app.png)
-
-
-### 2 Prediction Result
-
-![Prediction Result](asset/demo-result.gif)
-
 ---
 ## Conclusion
 
