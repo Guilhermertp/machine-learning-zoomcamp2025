@@ -40,7 +40,7 @@
 
 9. [Getting Started](#9-getting-started)
     9.1 [Clone the Repository](#91-clone-the-repository)
-    9.2 [Navigate to the Project Folder](92-navigate-to-the-project-folder)
+    9.2 [Navigate to the Project Folder](#92-navigate-to-the-project-folder)
 
 10. [Dependencies / Installation](#10-dependencies--installation)   
 
