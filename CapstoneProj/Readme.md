@@ -245,13 +245,6 @@ Traffic volume is a **regression task**, and these metrics:
 
 ### 6.4 Model Performance Comparison
 
-| Model             | MAE | MSE | RMSE | R² Score |
-| ----------------- | --- | --- | ---- | -------- |
-| Linear Regression | —   | —   | —    | —        |
-| Decision Tree     | —   | —   | —    | —        |
-| Random Forest     | —   | —   | —    | —        |
-| XGBoost           | —   | —   | —    | —        |
-
 | Model             | MAE     | MSE          | RMSE    | R² Score |
 | ----------------- | ------- | ------------ | ------- | -------- |
 | Linear Regression | 1577.90 | 3,204,038.54 | 1789.98 | 0.190    |
