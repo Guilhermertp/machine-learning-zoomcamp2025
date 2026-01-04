@@ -365,7 +365,7 @@ docker run -p 9696:9696 flask-ml-api
 Access:
 
 ```
-http://127.0.0.1:9696/
+Then open your browser and visit: [http://127.0.0.1:9696/](http://127.0.0.1:9696/)
 ```
 
 ---
