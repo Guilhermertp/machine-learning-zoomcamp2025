@@ -270,8 +270,12 @@ Traffic volume is a **regression task**, and these metrics:
 ```
 project_folder/
 │
-├─ predict.py
+├─ app.py
 ├─ model.pkl
+├─ Dockerfile
+├─ requirements.txt
+├─ EDA.ipynb
+├─ train.py
 │
 ├─ assets/
 │  ├─ app.png
