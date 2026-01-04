@@ -252,6 +252,13 @@ Traffic volume is a **regression task**, and these metrics:
 | Random Forest     | —   | —   | —    | —        |
 | XGBoost           | —   | —   | —    | —        |
 
+| Model             | MAE     | MSE          | RMSE    | R² Score |
+| ----------------- | ------- | ------------ | ------- | -------- |
+| Linear Regression | 1577.90 | 3,204,038.54 | 1789.98 | 0.190    |
+| Decision Tree     | 293.74  | 257,271.31   | 507.22  | 0.935    |
+| Random Forest     | 278.40  | 223,224.67   | 472.47  | 0.944    |
+| **XGBoost**       | 268.39  | 212,305.14   | 460.77  | 0.946    |
+
 ---
 
 ## 7. App Features
