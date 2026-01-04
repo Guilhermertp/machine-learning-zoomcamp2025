@@ -389,7 +389,7 @@ You can send a JSON request directly to the API:
 
 #### Example `curl` Command (Windows Command Prompt)
 
-This command sends **all 13 features** your XGBoost model expects:
+This command sends **all 13 features** that the XGBoost model expects:
 
 ```cmd
 curl -X POST http://localhost:9696/predict -H "Content-Type: application/json" -d "{\"temp\":298.15,\"rain_1h\":0,\"snow_1h\":0,\"clouds_all\":75,\"hour\":14,\"is_holiday\":0,\"weekday_Friday\":0,\"weekday_Monday\":0,\"weekday_Saturday\":0,\"weekday_Sunday\":0,\"weekday_Thursday\":0,\"weekday_Tuesday\":1,\"weekday_Wednesday\":0}"
