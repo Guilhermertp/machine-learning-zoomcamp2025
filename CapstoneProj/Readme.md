@@ -9,6 +9,7 @@
 ![pandas](https://img.shields.io/badge/pandas-2.3.3-blue)
 ![numpy](https://img.shields.io/badge/numpy-2.3.3-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7.2-blue)
+![scikit-learn](https://img.shields.io/badge/xgboost-3.1.0-blue)
 ![joblib](https://img.shields.io/badge/joblib-1.5.2-blue)
 
 ---
@@ -314,7 +315,7 @@ All necessary files, including the dataset, are included in this folder.
 It’s recommended to use a virtual environment. Install the required Python packages with the specified versions:
 
 ```bash
-pip install Flask==3.1.2 scikit-learn==1.7.2 joblib==1.5.2 lightgbm==4.6.0 pandas==2.3.3 numpy==2.3.3
+pip install Flask==3.1.2 scikit-learn==1.7.2 joblib==1.5.2 lightgbm==4.6.0 pandas==2.3.3 numpy==2.3.3 xgboost==3.1.0
 ```
 
 ---
@@ -345,7 +346,7 @@ Then open your browser and visit: [http://127.0.0.1:9696/](http://127.0.0.1:9696
 Build the Docker image:
 
 ```bash
-docker build -t traffic-volume-api .
+docker build -t flask-ml-api .
 ```
 
 ---
@@ -355,7 +356,7 @@ docker build -t traffic-volume-api .
 Run the Docker container:
 
 ```bash
-docker run -p 9696:9696 traffic-volume-api
+docker run -p 9696:9696 flask-ml-api
 ```
 Access:
 
