@@ -252,8 +252,6 @@ Traffic volume is a **regression task**, and these metrics:
 | Random Forest     | 278.40  | 223,224.67   | 472.47  | 0.944    |
 | **XGBoost**       | 268.39  | 212,305.14   | 460.77  | 0.946    |
 
-Conclusion:
-
 <b>Best model: <u>XGBoost Regressor</u></b>
 
 ---
