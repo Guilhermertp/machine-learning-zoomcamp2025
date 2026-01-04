@@ -410,10 +410,14 @@ curl -X POST http://localhost:9696/predict -H "Content-Type: application/json" -
 
 ![App Interface](assets/app.png)
 ---
+
 ## 13. Conclusion
 
-This project provides a complete template for predicting hourly traffic volume using machine learning.
-By combining temporal, weather, and holiday features, the model supports smarter traffic forecasting for cities and commuters.
+This project demonstrates the practical application of **machine learning for traffic volume prediction** on I-94 between Minneapolis and St. Paul. By leveraging temporal, weather, holiday, and one-hot encoded weekday features, the model provides **accurate hourly forecasts** that can inform congestion management and city planning.
+
+Among the models tested, **XGBoost achieved the best performance** with an RMSE of **460.77** and an R² of **0.946**, effectively capturing the strong weekday commuting patterns and weekend traffic variations observed in the dataset.
+
+Overall, this Flask app—fully deployable locally or via Docker—offers a **ready-to-use tool for interactive predictions**, illustrating how data-driven insights can enhance traffic monitoring and decision-making.
 
 ---
 
