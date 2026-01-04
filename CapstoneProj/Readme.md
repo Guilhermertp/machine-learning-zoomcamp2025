@@ -378,11 +378,22 @@ http://127.0.0.1:9696/
 
 You can send a JSON request directly to the API:
 
-```bash
-curl -X POST http://localhost:9696/predict \
--H "Content-Type: application/json" \
--d "{\"temp\":298.15,\"rain_1h\":0,\"snow_1h\":0,\"clouds_all\":75,\"holiday\":0,\"year\":2018,\"month\":6,\"hour\":14}"
-```
+# Testing the `/predict` Endpoint with `curl` on Windows
+
+> **Note:** Before running this command, make sure your Flask server is running:
+> 
+> - Either locally: `python app.py`
+> - Or in Docker: after building the image, run `docker run -p 9696:9696 flask-ml-api`
+
+---
+
+### Example `curl` Command (Windows Command Prompt)
+
+This command sends **all 13 features** your XGBoost model expects:
+
+```cmd
+curl -X POST http://localhost:9696/predict -H "Content-Type: application/json" -d "{\"temp\":298.15,\"rain_1h\":0,\"snow_1h\":0,\"clouds_all\":75,\"hour\":14,\"is_holiday\":0,\"weekday_Friday\":0,\"weekday_Monday\":0,\"weekday_Saturday\":0,\"weekday_Sunday\":0,\"weekday_Thursday\":0,\"weekday_Tuesday\":1,\"weekday_Wednesday\":0}"
+
 
 ---
 
